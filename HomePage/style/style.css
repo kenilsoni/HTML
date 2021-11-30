@@ -284,7 +284,6 @@ a.nav-link:hover{
 #footer{
     background-color:#111111;
     text-align: center;
-    padding:1% 7%;
     font-size: 13px !important;
 }
 
@@ -330,6 +329,75 @@ a.nav-link:hover{
 
 
 /* media query start */
+@media  (max-width:1500px){
+    #about{
+        padding: 5% 2%;
+    }
+    #Helperland {
+        padding: 3% 0%;
+        /* text-align: center; */
+        /* color: #4F4F4F; */
+    }
+    #CustomerVoice{
+
+        padding: 5% 2%;
+    }
+}
+@media  (max-width:1150px){
+    li.nav-item{
+        display: flex;
+     justify-content: center;
+     padding-top: 15px;
+     }
+    .col-lg-4
+    {
+          
+    padding: 10px 15px 10px 25px;
+}
+
+.policy p{
+    font-size: 12px;
+    text-align: center;
+}
+.ok-btn{
+    padding: 7px;
+    position: absolute;
+    right: 5%;
+    height: 27px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #EED507;
+    border-radius: 24px;
+    border: none;
+    color: #4F4F4F;
+    font-weight: normal;
+    font-size: 10px;
+    width: 38px
+   
+}
+form {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 191px;
+    flex-direction: column;
+}
+}
+
+@media  (max-width:995px){
+    .col-lg-3{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media  (max-width:740px)
+{
+    .arrow{
+        display: none;
+    }
+}
+
 @media  (max-width:530px){
     .navbar-toggler
     {
@@ -422,72 +490,3 @@ a.nav-link:hover{
 }
 
 
-@media  (max-width:1150px){
-    li.nav-item{
-        display: flex;
-     justify-content: center;
-     padding-top: 15px;
-     }
-    .col-lg-4
-    {
-          
-    padding: 10px 15px 10px 25px;
-}
-
-.policy p{
-    font-size: 12px;
-    text-align: center;
-}
-.ok-btn{
-    padding: 7px;
-    position: absolute;
-    right: 5%;
-    height: 27px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #EED507;
-    border-radius: 24px;
-    border: none;
-    color: #4F4F4F;
-    font-weight: normal;
-    font-size: 10px;
-    width: 38px
-   
-}
-form {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    height: 217px;
-    flex-direction: column;
-}
-}
-
-
-@media  (max-width:1500px){
-    #about{
-        padding: 5% 2%;
-    }
-    #Helperland {
-        padding: 3% 0%;
-        /* text-align: center; */
-        /* color: #4F4F4F; */
-    }
-    #CustomerVoice{
-
-        padding: 5% 2%;
-    }
-}
-
-@media  (max-width:995px){
-    .col-lg-3{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media  (max-width:740px)
-{
-    .arrow{
-        display: none;
-    }
-}
