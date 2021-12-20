@@ -1,11 +1,14 @@
 /* Navbar css */
+
 .nav-link{
     font-size: 15px;
     color:#fff;
 }
 
-a.nav-link:hover{
+.nav-link:hover{
     color:rgb(139, 172, 62);
+    border: 1px solid white;
+    border-radius: 50px;
 }
 .nav-item{
     font-size:17px;
@@ -109,7 +112,7 @@ a.nav-link:hover{
 
 /* Why Helperland css tart  */
 #Helperland{
-    padding:3% 15%;
+    padding:3% ;
     text-align: center;
     color:#4F4F4F;
 }
@@ -122,7 +125,13 @@ a.nav-link:hover{
     font-size: 30px;
     padding:30px 30px 20px 40px;
 }
+.reason img {
+	transition: transform 0.65s;
+}
 
+.reason img:hover {
+	transform: scale(1.1);
+}
 .reason{
     text-align: center;
     margin-top:3%; 
@@ -143,7 +152,7 @@ a.nav-link:hover{
     background-image: url('../image/side-left.jpg'), url('../image/sider-right.jpg') ;
     background-position: left,right;
     background-repeat: repeat-y ;
-    padding:5% 15%;
+    padding:5% ;
     color:#4F4F4F;
     font-size: 18px;
     text-align: left;
@@ -184,6 +193,9 @@ a.nav-link:hover{
     font-weight: bold;
     color: #3D4046;
 }
+.card-box:hover{
+    box-shadow: 0 0 30px rgb(0 0 0 / 60%);
+}
 
 .card-box h6{
     font-size:13px;
@@ -211,7 +223,7 @@ a.nav-link:hover{
     text-align: center;
     color:#4F4F4F;
     background-color:#F4F5F8;
-    padding:5% 15%;
+    padding:5% ;
     margin-bottom: -56px;
    
 
@@ -245,15 +257,30 @@ a.nav-link:hover{
     border-left:solid #1D7A8C;
     border-radius: 5px;
 }
+.newsletterHeader {
+	font-size: 17px;
+	color: #353548;
+	margin-bottom: 16px;
+	font-weight: 500;
+}
 
-.newsetter{
-    width:250px;
-    padding:13px;
-    font-size: 13px;
-    border-radius: 55px;
-    border:solid .3px #565656;
-    height:40px;
-   
+.newsletterForm input {
+	outline: none;
+	border: 1px solid #565656;
+	padding: 11px 22px 13px;
+	margin-right: 11px;
+	background: transparent;
+	font-size: 14px;
+	max-width: 233px;
+}
+
+.newsletterForm button {
+	outline: none;
+	border: none;
+	background: #ff7b6d;
+	color: #fff;
+	padding: 11px 21px 13px 23px;
+	font-size: 14px;
 }
 
 .btn-submit{
@@ -276,16 +303,38 @@ a.nav-link:hover{
     margin:10px;
 
 }
+.socialMedia a {
+    width: 40px;
+    height: 40px;
+    transition: background 0.4s;
+}
+.msgboat{
+
+        position: fixed;
+        bottom: 70px;
+        right: 71px;
+}
 
 
 /* Footer css start */
 
-
-#footer{
-    background-color:#111111;
-    text-align: center;
-    font-size: 13px !important;
+footer {
+	padding: 20px 123px 26px 115px;
+	background: #111111;
 }
+
+.footerMenuItem a {
+	display: block;
+	text-decoration: none;
+	color: #f1f1f1;
+	margin: 0 10px;
+	transition: color 0.3s;
+}
+
+.footerMenuItem:hover a {
+	color: #29626d;
+}
+
 
 .brand{
     width:50%;
@@ -293,6 +342,7 @@ a.nav-link:hover{
 
 /* policy css start */
 .policy{
+  
     font-size: 14px;
     padding:20px;
     background-color:#292929;
@@ -300,11 +350,15 @@ a.nav-link:hover{
     color:#fff;
     text-align: center;
 }
+.policywidth{
+    width:70%;
+}
 
 .ok-btn{
     padding:5px;
     position: absolute;
     right:5%;
+   
     display: inline-block;
     text-decoration: none;
     background-color:#EED507;
@@ -329,13 +383,13 @@ a.nav-link:hover{
 
 /* media query start */
 @media  (max-width:1500px){
+  
     #about{
         padding: 5% 2%;
     }
     #Helperland {
         padding: 3% 0%;
-        /* text-align: center; */
-        /* color: #4F4F4F; */
+       
     }
     #CustomerVoice{
 
@@ -343,6 +397,18 @@ a.nav-link:hover{
     }
 }
 @media  (max-width:1150px){
+    footer {
+		padding: 25px;
+		justify-content: space-evenly !important;
+	}
+    .footerMenu {
+		flex-direction: column;
+	}
+
+	.footerMenuItem {
+		margin-bottom: 10px;
+	}
+
     li.nav-item{
         display: flex;
      justify-content: center;
@@ -352,7 +418,7 @@ a.nav-link:hover{
     {
           
     padding: 10px 15px 10px 25px;
-}
+     }
 
 .policy p{
     font-size: 12px;
@@ -371,17 +437,12 @@ a.nav-link:hover{
     color: #4F4F4F;
     font-weight: normal;
     font-size: 10px;
-    width: 38px
+    width: 47px
    
 }
-form {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    height: 191px;
-    flex-direction: column;
-}
-}
+
+
+
 
 @media  (max-width:995px){
     .col-lg-3{
@@ -389,15 +450,30 @@ form {
         justify-content: center;
     }
 }
-
 @media  (max-width:740px)
 {
     .arrow{
         display: none;
     }
+
 }
 
+
+}
 @media  (max-width:530px){
+    
+	footer {
+		flex-direction: column;
+	}
+
+	.footerLogo {
+		margin-bottom: 15px;
+	}
+
+	.footerMenu {
+		margin: 15px 0;
+	}
+
     .navbar-toggler
     {
         border: 1px solid white;
@@ -429,12 +505,11 @@ form {
         margin:auto;
        
     }
-    .justify-content-between {
-      
-        flex-direction: column;
-        align-items: center;
-        
+    
+    .about-text{
+        text-align: center;
     }
+
     .navbar-brand {
       
         margin-left: 30px;
@@ -443,29 +518,17 @@ form {
         font-size: 12px;
      
     }
-    .arrow{
-        display: none;
-    }
+   
     .process{
         display: flex;
         flex-direction: column;
     }
-    .col-lg-4
-    {
-          
-    padding: 10px 15px 10px 25px;
-}
-#CustomerVoice h1{
-    padding-top: 17px;
+   
+    #CustomerVoice h1{
+        padding-top: 17px;
 
-}
-        form {
-            display: flex;
-            align-items: center;
-            
-            height: 217px;
-            flex-direction: column;
-        }
+    }
+        
     .ok-btn{
         padding: 7px;
         position: absolute;
@@ -485,7 +548,10 @@ form {
     .policy p{
         text-align: center;
     }
-        
+  .newsletter{
+      padding-bottom: 34px;
+  }
 }
+
 
 
