@@ -13,59 +13,71 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <title>Home Page</title>
-    </head>
+        <script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"
+	></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
+    </head>
+      
     <body>
-        <section id="header">
+
+        <section  id="header">
 <!-- Navbar start -->
-            <nav class="navbar  navbar-expand-lg">
-                <a class="navbar-brand">
-                    <img
-                        src="image/white-logo-transparent-background.png"
-                        alt="Helperland">
-                </a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" ><i
-                            class="fas fa-bars"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="button nav-link">Book a
-                                Cleaner</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link">Prices</a></li>
-                        <li class="nav-item"><a class="nav-link">Our Guarantee</a></li>
-                        <li class="nav-item"><a class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link">Contanct us</a></li>
-                        <li class="nav-item"><a class="login-button nav-link">Login</a></li>
-                        <li class="nav-item"><a class="button nav-link">Become a
-                                Helper</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img style="vertical-align: baseline;"
-                                    src="image/flag.png" alt="">
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end"
-                                aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#"><img
-                                            src="" alt=""> <span>India</span>
-                                    </a></li>
-                                <li><a class="dropdown-item" href="#"><img
-                                            src="image/flag.png" alt=""> <span>U.K.</span>
-                                    </a></li>
-                                <li><a class="dropdown-item" href="#"><img
-                                            src="image/flag.png" alt=""> <span>U.S.A.</span>
-                                    </a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <nav class=" d-flex justify-content-between text-white fixed-top" id="vlr">
+                <div class="logoDiv imsize" >
+                    <a class="d-block" href="index.html" >
+                        <img id="new" src="image/white-logo-transparent-background.png" alt="logo" />
+                    </a>
+                    <div class="tgle_class h1 me-5"></div>
+                </div>
+              
+                <div class="navMenu text-white d-flex justify-content-center align-items-center align-items-start ">
+                    <div class="navItem active"><a >Book a Cleaner</a></div>
+                    <div class="navItem"><a href="../Price/price.html">Prices</a></div>
+                    <div class="navItem"><a href="#">Our Guarantee</a></div>
+                    <div class="navItem"><a href="#">Blog</a></div>
+                    <div class="navItem"><a href="../Contact/contact.html">Contact us</a></div>
+                    <div class="navItem active"><a href="#">Login</a></div>
+                    <div class="navItem active"><a href="../BecomeA Provider/BecomeAprovider.html">Become a Helper</a></div>
+                    <div class="dropdown">
+                        <div class="d-flex" type="button" id="languageChanger" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="languageFlag">
+                                <img src="image/flag.png" alt="flag" />
+                            </div>
+                            <div class="arrowBottom">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="7">
+                                    <image
+                                        width="12"
+                                        height="7"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAQAAACWu2SvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflCxILOC+3huDXAAAAa0lEQVQI103NoQoCYQDD8VkMggYRLYLFt7rmI10ziMVkEs6m2ZcwWQQRsdh/huM73dL+jC0qjYn8eaSxijNu5h2euuISA0c8LUUs3HEybFt7fMyMvXEQKQMbvDywa8nvsgbrknvSaZt+qhK+nGpkpn2sFJAAAAAASUVORK5CYII="
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu mt-3 me-1" aria-labelledby="languageChanger">
+                            <li class="languageFlag d-flex align-items-center justify-content-center dropdown-item">
+                                <div class="me-2">
+                                    <img src="image/flag.png" alt="flag" />
+                                </div>
+                                <div class="countryName">Japan</div>
+                            </li>
+                            <li class="languageFlag d-flex align-items-center justify-content-center dropdown-item">
+                                <div class="me-2">
+                                    <img src="image/flag.png" alt="flag" />
+                                </div>
+                                <div class="countryName">Dubai</div>
+                            </li>
+                            <li class="languageFlag d-flex align-items-center justify-content-center dropdown-item">
+                                <div class="me-2">
+                                    <img src="image/flag.png" alt="flag" />
+                                </div>
+                                <div class="countryName">France</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </nav>
@@ -110,10 +122,23 @@
                     <p>Enjoy amazing service</p>
                 </div>
             </div>
-
-            <div class="down">
+            <div class="d-flex justify-content-center mb-1">
+            <svg id="scrollDown" xmlns="http://www.w3.org/2000/svg" width="47" height="47">
+				<path
+					stroke="#FFF"
+					fill="none"
+					d="M23.499 3.499c11.046 0 20 8.955 20 20 0 11.046-8.954 20-20 20-11.045 0-20-8.954-20-20 0-11.045 8.955-20 20-20z"
+				/>
+				<path
+					fill-rule="evenodd"
+					fill="#FFF"
+					d="M30.584 25.522a.835.835 0 0 0-1.188 0l-5.055 5.083V14.348c0-.47-.378-.85-.845-.85-.206 0-.845.38-.845.85v16.257l-5.049-5.083a.835.835 0 0 0-1.188 0c.426.331.426.863 0 1.195l6.491 6.527c.795.165.378.248.598.248a.837.837 0 0 0 .597-.248l6.491-6.527a.865.865 0 0 0-.007-1.195z"
+				/>
+			</svg>
+        </div>
+            <!-- <div class="down">
                 <i class="fas fa-arrow-down border border-1 p-2"></i>
-            </div>
+            </div> -->
         </section>
 <!-- Why Helperland start -->
         <section id="Helperland">
@@ -163,7 +188,7 @@
                     </div>
                     <div class="col-lg-3 align-items-center">
                         <img class="about-image" src="image/group-36.png"
-                            alt="peoples">
+                            alt="peoples" >
 
                     </div>
                 </div>
@@ -344,10 +369,10 @@
         </svg>
     </div>
     <div class="footerMenu d-flex flex-wrap align-items-center justify-content-center">
-        <div class="footerMenuItem"><a href="index.html">HOME</a></div>
-        <div class="footerMenuItem"><a href="about.html">ABOUT</a></div>
+        <div class="footerMenuItem"><a href="#">HOME</a></div>
+        <div class="footerMenuItem"><a href="../ABOUT/about.html">ABOUT</a></div>
         <div class="footerMenuItem"><a href="#">TESTIMONIALS</a></div>
-        <div class="footerMenuItem"><a href="faq.html">FAQS</a></div>
+        <div class="footerMenuItem"><a href="../FAQ/faq.html">FAQS</a></div>
         <div class="footerMenuItem"><a href="#">INSURANCE POLICY</a></div>
         <div class="footerMenuItem"><a href="#">IMPRESSUM</a></div>
     </div>
@@ -377,7 +402,7 @@
     </div>
 </footer>
 
-        <div class="policy d-flex align-items-center justify-content-around">
+        <div class="policy d-flex align-items-center justify-content-around fixed-bottom" id="policy1">
 
             <div class="policywidth">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 feugiat nunc libero, ac malesuada ligula aliquam ac. <a
@@ -385,15 +410,99 @@
                  
                     
             </div>
-            <button class="ok-btn" href="#">OK!</button>
+            <button class="ok-btn" onclick="closefun()">OK!</button>
            
         </div> 
-
+        
     </body>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-    </script>
+  
+      <script>
+        const scrollDown = document.querySelector("#scrollDown");
+        	const tgle_class1 = document.querySelector(".tgle_class");
+           
+		const navMenu = document.querySelector(".navMenu");
+        tgle_class1.addEventListener("click", () => {
+			tgle_class1.classList.toggle("open");
+			navMenu.classList.toggle("open");
+		});
+            
+		window.addEventListener("scroll", ()=>{
+			if (window.scrollY > 70) {
+				document.getElementById("vlr").classList.add("bg-grey");
+       
+                document.getElementById("new").style.maxHeight="64px";
+                   
+                document.getElementById("new").style.maxWidth="93px";
+			} else {
+				document.getElementById("vlr").classList.remove("bg-grey");
+              
+                document.getElementById("new").style.maxHeight="102px";
+                   
+                document.getElementById("new").style.maxWidth="138px";
+			}
+		});
+       function closefun()
+       {
+        var element = document.getElementById("policy1");
+        element.classList.add("d-none");
+       }
+       scrollDown.addEventListener("click", () => {
+        scrollDown.scrollIntoView();
+    });
+        </script>
+
 
 </html>
+
+<!-- 
+<nav class="navbar  navbar-expand-lg fixed-top" id="vlr">
+    <a class="navbar-brand">
+        <img
+            src="image/white-logo-transparent-background.png"
+            alt="Helperland">
+    </a>
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ><i
+                class="fas fa-bars"></i>
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="button nav-link">Book a
+                    Cleaner</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../Price/price.html" >Prices</a></li>
+            <li class="nav-item"><a class="nav-link" href="../">Our Guarantee</a></li>
+            <li class="nav-item"><a class="nav-link">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../Contact/contact.html">Contanct us</a></li>
+            <li class="nav-item"><a class="login-button nav-link">Login</a></li>
+            <li class="nav-item"><a class="button nav-link" href="../BecomeA Provider/BecomeAprovider.html">Become a
+                    Helper</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"
+                    id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img style="vertical-align: baseline;"
+                        src="image/flag.png" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"><img
+                                src="" alt=""> <span>India</span>
+                        </a></li>
+                    <li><a class="dropdown-item" href="#"><img
+                                src="image/flag.png" alt=""> <span>U.K.</span>
+                        </a></li>
+                    <li><a class="dropdown-item" href="#"><img
+                                src="image/flag.png" alt=""> <span>U.S.A.</span>
+                        </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</nav> -->
