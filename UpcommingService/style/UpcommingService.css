@@ -49,7 +49,7 @@ nav {
 .notifications .badge {
 	width: 18px;
 	height: 18px;
-	font-size: 13.5px;
+	font-size: 10px;
 	font-weight: bold;
 	background: #ff1616;
 	padding: 5px;
@@ -222,13 +222,13 @@ tbody tr {
 }
 
 table.dataTable thead th.sorting_asc {
-	background-image: url("../images/acendingSort.png") !important;
+	background-image: url("../img/acendingSort.png") !important;
 }
 table.dataTable thead th.sorting_desc {
-	background-image: url("../images/decendingSort.png") !important;
+	background-image: url("../img/decendingSort.png") !important;
 }
 table.dataTable thead .sorting {
-	background-image: url("../images/sort.png") !important;
+	background-image: url("../img/sort.png") !important;
 	background-position: right 4px top 50% !important;
 }
 table.dataTable thead th,
@@ -552,7 +552,7 @@ footer hr {
 		background: #525252;
 	}
 
-	.hamburger {
+	.tgle_class {
 		position: relative;
 		height: 30px;
 		width: 30px;
@@ -562,7 +562,7 @@ footer hr {
 		justify-content: center;
 	}
 
-	.hamburger::before {
+	.tgle_class::before {
 		content: "";
 		position: absolute;
 		width: 30px;
@@ -573,7 +573,7 @@ footer hr {
 		transition: all 0.3s;
 	}
 
-	.hamburger::after {
+	.tgle_class::after {
 		content: "";
 		position: absolute;
 		width: 30px;
