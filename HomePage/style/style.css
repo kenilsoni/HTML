@@ -1,8 +1,4 @@
 
-#vlr{
-    transition:all 0.5s ;
-}
-
 
 /* Navbar css */
 * {
@@ -11,6 +7,9 @@
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif !important;
 }
+
+
+
 html {
 	scroll-behavior: smooth;
 }
@@ -21,8 +20,12 @@ html {
 	padding: 5px;
 	padding-left: 15px;
 }
+#vlr{
+    transition:all 0.5s ;
+}
 
 .logoDiv img {
+    margin-top: 10px;
 	width: 138px;
 	height: 102px;
   
@@ -234,7 +237,7 @@ html {
 /* card css start */
 
 .card-box h5{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
     color: #3D4046;
 }
@@ -376,7 +379,9 @@ footer {
 	margin: 0 10px;
 	transition: color 0.3s;
 }
-
+.footerMenuItem a:hover{
+    color: #005f71;
+}
 
 
 .brand{
@@ -454,29 +459,33 @@ footer {
 	}
 
 	.navMenu {
-        overflow: hidden;
-		height: 0;
-		width: 100%;
-		padding-left: 15px;
-		background: #525252;
-		flex-direction: column;
-		align-items: flex-start;
-		margin-top: 0;
-		transition: height 0.5s ease-in-out;
-		pointer-events: none;
-        
-	}
+      
+        flex-direction: column;
+        height: 100%; 
+        width: 0; 
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0); 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition:left 0.5s;
 
+	}
+  
 	.navMenu.open {
-		height: 435px;
+
+        padding-top: 0px;
+		width: 250px;
         display: flex;
         justify-content: center;
 		pointer-events: all;
 	}
-   
+
 	.navItem a,
 	.navMenu .dropdown {
-		margin: 5px 0;
+		margin:15px;
 	}
 	.navMenu .dropdown {
 		margin-left: 10px;
@@ -490,6 +499,7 @@ footer {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+     
 	}
 
 	.tgle_class::before {
@@ -514,11 +524,13 @@ footer {
 	}
 
 	.tgle_class.open::before {
+        z-index: 5555;
 		transform: translateY(0) rotate(45deg);
 		box-shadow: none;
 	}
 
 	.tgle_class.open::after {
+        z-index: 5555;
 		transform: translateY(0) rotate(-45deg);
 	}
 
