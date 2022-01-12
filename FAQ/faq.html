@@ -12,26 +12,86 @@
 			crossorigin="anonymous"
 			/>
 		<link rel="stylesheet" href="style/faq.css" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	
 	</head>
 	<body>
 		<!-- Navbar start -->
+		
 		<nav class="d-flex justify-content-between align-items-center text-white">
 			<div class="divlogo">
-				<a class="d-block" href="index.html">
+				<a class="d-block" href="../HomePage/Homepage.html">
 					<img src="img/logo.png" alt="logo" />
 				</a>
 				<div class="tgle_nav h1 me-3"></div>
 			</div>
 			<div class="navmenu text-white d-flex justify-content-center">
-				<div class="navItem dark"><a href="#">Book now</a></div>
-				<div class="navItem"><a href="#">Prices & Services</a></div>
+				<div class="navItem dark"><a href="../BookService/BookService.html">Book now</a></div>
+				<div class="navItem"><a href="../Price/price.html">Prices & Services</a></div>
 				<div class="navItem"><a href="#">Warranty</a></div>
 				<div class="navItem"><a href="#">Blog</a></div>
-				<div class="navItem"><a href="#">Contact</a></div>
-				<div class="navItem dark"><a href="#">Login</a></div>
-				<div class="navItem dark"><a href="#">Become a Helper</a></div>
+				<div class="navItem"><a href="../Contact/contact.html">Contact</a></div>
+				<div class="navItem dark"><a  type="button" data-bs-toggle="modal" data-bs-target="#myModal">Login</a></div>
+				<div class="navItem dark"><a href="../BecomeAProvider/BecomeAprovider.html">Become a Helper</a></div>
 			</div>
 		</nav>
+
+				  <!-- Login modal -->
+				  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 11111;">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content clearfix">
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<div class="modal-body">
+								<h3 class="title">Login </h3>
+								<p class="description">Login here Using Email & Password</p>
+								<div class="form-group">
+									<span class="input-icon"><img src="./img/download.png" style="width: 25px;"></span>
+									<input type="email" class="form-control" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<span class="input-icon"><img src="./img/password.png"
+										style="width:25px; height: 22px;"/></span>
+									<input type="password" class="form-control" placeholder="Password">
+								</div>
+								<div class="form-group checkbox">
+									<input type="checkbox">
+									<label>Remamber me</label>
+								</div>
+							 
+								<button class="btn">Login</button>
+								<div class="lowerpart">
+									<div>  <a type="button" data-bs-toggle="modal" data-bs-target="#myModal2" href="">Forgot Password?</a></div>
+									<div><span>Dont Have an account?<span> <a href="../CreateAccount/createAccount.html">Create an account<a></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fogot password modal -->
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 11111;">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content clearfix">
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<div class="modal-body">
+								<h3 class="title">Forgot Password </h3>
+							   
+								<div class="form-group">
+									<span class="input-icon"><img src="./img/download.png" style="width: 25px;"></span>
+									<input type="email" class="form-control" placeholder="Enter email">
+								</div>
+								
+							 
+								<button class="btn">Send</button>
+								<div class="lowerpart">
+									<div>  <a href="" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Login now</a></div>
+								  
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
 		<!-- FAQ Image -->
 		<section class="faqimg">
 			<img src="img/banner.png" alt="faqHeaderImage" />
@@ -100,10 +160,10 @@
 						</div>
 						<div class="footer_Menu d-flex flex-wrap align-items-center
 							justify-content-center">
-							<div class="footerMenuItem"><a href="index.html">HOME</a></div>
-							<div class="footerMenuItem"><a href="about.html">ABOUT</a></div>
+							<div class="footerMenuItem"><a href="../HomePage/Homepage.html">HOME</a></div>
+							<div class="footerMenuItem"><a href="../ABOUT/about.html">ABOUT</a></div>
 							<div class="footerMenuItem"><a href="#">TESTIMONIALS</a></div>
-							<div class="footerMenuItem"><a href="faq.html">FAQS</a></div>
+							<div class="footerMenuItem"><a href="../FAQ/faq.html">FAQS</a></div>
 							<div class="footerMenuItem"><a href="#">INSURANCE POLICY</a></div>
 							<div class="footerMenuItem"><a href="#">IMPRESSUM</a></div>
 						</div>
